@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #516dff;
+    color: #fff;
+    font-family:'Honk', system-ui ;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    font-size: 27px;
+}
+a{
+    color: #fff;
+}
+h1{
+    line-height: 1.4;
+}
+.btn{
+    border: 0;
+    background-color: #fff;
+    color: #516dff;
+    padding: 10px 20px;
+    font-family: inherit;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:focus{
+    outline: 0;
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+}
+.screen.up{
+    margin-top: -200vh;
+}
+.insects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.insects-list li{
+    margin: 10px;
+}
+.choose-insect-btn{
+    background-color: #187b40;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+    font: size 90px;;
+}
+.choose-insect-btn:hover{
+    background-color: #c2aa27;
+    color: #516dff;
+}
+.choose-insect-btn:active{
+    background-color: #487fd2;
+}
+.choose-insect-btn img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

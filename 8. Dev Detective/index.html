@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>DevDetective</h1>
+            <div class="mode">
+                <p class="modeText">Dark</p>
+                <img id="mode-icon" src="./assets/images/moon-icon.svg" alt="">
+            </div>
+        </div>
+
+        <div class="form active">
+            <input type="search" name="user-input" id="input" placeholder="Enter a GitHub username..." required>
+            <div class="error">
+                <p id="no-results">no search results</p>
+            </div>
+            <button class="btn-search" id="submit">Search</button>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-image-container">
+                    <img src="" alt="" class="profile-image" width="120px"height = 120px>
+                    <div class="bio-container">
+                        <div class="user-container">
+                            <p class="name"></p>
+                            <p class="Date"></p>
+                        </div>
+                        <!-- <p class="username"></p>  -->
+                        <a href="#" class="username"></a> 
+                    </div>  
+                </div>
+                <div class="bio"><p class="Profile-bio"></p></div>
+            </div>
+            <div class="repos">
+                <div class="profiles-repos">
+                    <p class="Repo">Repos</p>
+                    <p class="Repos-class"></p>
+                </div>
+                <div class="profiles-followers">
+                    <p class="follow">followers</p>
+                    <p class="followers-class"></p>
+                </div>
+                <div class="profiles-following">
+                    <p class="following">following</p>
+                    <p class="following-class"></p>
+                </div>
+            </div>
+            <div class="profile-bottom-wrapper">
+                <div class="profile-info">
+                    <div class="bottom-icons"><img src="./assets/images/location-icon.svg" alt=""></div>
+                    <p id="location-class"></p>
+                </div>
+                <div class="profile-info">
+                    <div class="bottom-icons"><img src="./assets/images/website-icon.svg" alt=""></div>
+                    <a href="#" id="page"></a>
+                </div>
+                <div class="profile-info">
+                    <div class="bottom-icons"><img src="./assets/images/twitter-icon.svg" alt=""></div>
+                    <a href="#" id="twitter"></a>
+                </div>
+                <div class="profile-info">
+                    <div class="bottom-icons"><img src="./assets/images/company-icon.svg" alt=""></div>
+                    <p id="company"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
